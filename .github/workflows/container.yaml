@@ -5,7 +5,7 @@ on:
       branches:
         - main
       paths:
-        - '/packages/conatiner/**'
+        - path: '/packages/conatiner/**'
 
 defaults:
   run:
