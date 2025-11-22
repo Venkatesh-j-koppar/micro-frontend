@@ -5,10 +5,10 @@ on:
       branches:
         - main
       paths:
-        - path: '/packages/conatiner/**'
+        - path: "/packages/conatiner/**"
 
 defaults:
-  runs:
+  run:
     working-directory: conatiner
 
 jobs:
