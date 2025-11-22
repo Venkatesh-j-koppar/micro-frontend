@@ -6,6 +6,7 @@ const App = () => {
     console.log('printing the value of marketing',mount)
     console.log('hello world')
     console.log('hello world')
+    console.log('hello world')
     return (
         <div>
         <h1>Inside App</h1>
