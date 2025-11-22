@@ -5,11 +5,11 @@ on:
       branches:
         - main
       paths:
-        - '/packages/conatiner/**'
+        - '/packages/container/**'
 
 defaults:
   run:
-    working-directory: conatiner
+    working-directory: container
 
 jobs:
   build:
@@ -18,7 +18,7 @@ jobs:
     steps:
       - uses: actions/checkout@2
       - run : npm install
-      - run : npm run builds
+      - run : npm run build
 
       - uses: chrislennon/action-aws-cli@v1.1
       - run: aws s3 sync dist s3://${{ secrets.AWS_S3_BUCKET_NAME }}/container/latest
